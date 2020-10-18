@@ -19,7 +19,7 @@
         "key": "Country",
         "fields": ["Year_Gross_Salary"]
       }
-    },
+    }
   ],
   "projection": {
     "type": "equalEarth"
