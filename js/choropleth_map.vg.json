@@ -11,7 +11,7 @@
         }
   },
   "transform": [{
-      "lookup": "properties.NAME",
+      "lookup": "properties.Country",
       "from": {
         "data": {
           "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/data/After_tax_plus_year_gross.csv"
@@ -23,7 +23,7 @@
     {"calculate": "datum.Year_Gross_Salary", "as": "Salary"}
   ],
   "projection": {
-    "type": "equirectangular"
+    "type": "equalEarth"
   },
   "mark": {
     "type": "geoshape"
@@ -35,7 +35,7 @@
       "scale": {"type": "log"}
     },
     "tooltip": [
-      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+      {"field": "Country", "type": "nominal", "title": "Country"},
       {"field": "Year_Gross_Salary", "type": "quantitative"}
     ]
   }
