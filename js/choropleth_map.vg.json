@@ -11,7 +11,7 @@
         }
   },
   "transform": [{
-      "lookup": "Country",
+      "lookup": "properties.admin",
       "from": {
         "data": {
           "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/data/After_tax_plus_year_gross.csv"
