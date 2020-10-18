@@ -20,7 +20,6 @@
         "fields": ["Year_Gross_Salary"]
       }
     },
-    {"calculate": "datum.Year_Gross_Salary", "as": "Salary"}
   ],
   "projection": {
     "type": "equalEarth"
