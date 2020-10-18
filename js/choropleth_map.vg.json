@@ -7,11 +7,11 @@
     "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/js/worldmap.topojson",
     "format": {
           "type": "topojson",
-          "feature": "ne_110m_admin_0_countries"
+          "feature": "worldmap"
         }
   },
   "transform": [{
-      "lookup": "properties.Country",
+      "lookup": "properties.NAME",
       "from": {
         "data": {
           "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/data/After_tax_plus_year_gross.csv"
