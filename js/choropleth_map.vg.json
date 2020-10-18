@@ -4,7 +4,7 @@
   "width": 800,
   "height": 600,
   "data": {
-    "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/js/worldmap.geo.json",
+    "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/js/worldmap.geo.json",
     "format": {
           "type": "topojson",
           "feature": "worldmap"
@@ -14,7 +14,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/Honeyjar1000/main/data/After_tax_plus_year_gross.csv"
+          "url": "https://raw.githubusercontent.com/Honeyjar1000/data/After_tax_plus_year_gross.csv"
         },
         "key": "Country",
         "fields": ["Year Gross Salary"]
