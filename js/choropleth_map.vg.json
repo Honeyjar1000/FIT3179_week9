@@ -17,21 +17,25 @@
           "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/data/After_tax_plus_year_gross.csv"
         },
         "key": "Country",
-        "fields": ["Year Gross Salary"]
+        "fields": ["Year_Gross_Salary"]
       }
-    }
+    },
+    {"calculate": "datum.Year_Gross_Salary", "as": "Salary"}
   ],
+  "projection": {
+    "type": "equirectangular"
+  },
   "mark": {
     "type": "geoshape"
     },
   "encoding": {
     "color": {
-      "field": "Active Cases",
+      "field": "Salary",
       "type": "quantitative"
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "Active", "type": "quantitative"}
+      {"field": "Year_Gross_Salary", "type": "quantitative"}
     ]
   }
 
