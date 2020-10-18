@@ -19,10 +19,11 @@
         "key": "Country",
         "fields": ["Year_Gross_Salary"]
       }
-    }
+    },
+    {"calculate": "datum.Year_Gross_Salary", "as": "Salary"}
   ],
   "projection": {
-    "type": "equalEarth"
+    "type": "equirectangular"
   },
   "mark": {
     "type": "geoshape"
@@ -30,10 +31,11 @@
   "encoding": {
     "color": {
       "field": "Salary",
-      "type": "quantitative"
+      "type": "quantitative",
+      "scale": {"type": "log"}   
     },
     "tooltip": [
-      {"field": "Country", "type": "nominal", "title": "Country"},
+      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
       {"field": "Year_Gross_Salary", "type": "quantitative"}
     ]
   }
