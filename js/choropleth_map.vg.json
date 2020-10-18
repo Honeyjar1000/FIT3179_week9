@@ -22,6 +22,9 @@
     },
     {"calculate": "datum.Year_Gross_Salary", "as": "Salary"}
   ],
+  "projection": {
+    "type": "equirectangular"
+  },
   "mark": {
     "type": "geoshape"
     },
