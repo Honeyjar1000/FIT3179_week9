@@ -4,14 +4,14 @@
   "width": 800,
   "height": 600,
   "data": {
-    "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/js/worldmap.topojson",
+    "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/js/worldmap_TOPO.geo.json",
     "format": {
           "type": "topojson",
-          "feature": "worldmap"
+          "feature": "worldmap_TOPO"
         }
   },
   "transform": [{
-      "lookup": "properties.NAME",
+      "lookup": "properties.name",
       "from": {
         "data": {
           "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/data/After_tax_plus_year_gross.csv"
