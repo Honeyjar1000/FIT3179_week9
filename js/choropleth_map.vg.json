@@ -17,10 +17,10 @@
           "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/data/After_tax_plus_year_gross.csv"
         },
         "key": "Country",
-        "fields": ["Year Gross Salary"]
+        "fields": ["Year_Gross_Salary"]
       }
     },
-   {"calculate": "datum.Year Gross Salary", "as": "Year Gross Salary"}
+    {"calculate": "datum.Year_Gross_Salary", "as": "Salary"}
   ],
   "mark": {
     "type": "geoshape"
@@ -32,7 +32,7 @@
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "Year Gross Salary", "type": "quantitative"}
+      {"field": "Year_Gross_Salary", "type": "quantitative"}
     ]
   }
 
