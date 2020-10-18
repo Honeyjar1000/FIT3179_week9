@@ -7,7 +7,7 @@
     "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/js/worldmap_TOPO.geo.json",
     "format": {
           "type": "topojson",
-          "feature": "worldmap_TOPO"
+          "feature": "worldmap"
         }
   },
   "transform": [{
