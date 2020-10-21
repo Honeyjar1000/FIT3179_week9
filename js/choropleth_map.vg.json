@@ -5,39 +5,35 @@
   "height": 600,
   "data": {
     "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/master/js/worldmap.topojson",
-    "format": {
-          "type": "topojson",
-          "feature": "worldmap"
-        }
+    "format": {"type": "topojson", "feature": "worldmap"}
   },
-  "transform": [{
+  "transform": [
+    {
       "lookup": "properties.name",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/data/After_tax_plus_year_gross.csv"
+          "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/data/salaryData2.csv"
         },
         "key": "Country",
         "fields": ["Year_Gross_Salary"]
       }
-    },
-    {"calculate": "datum.Year_Gross_Salary", "as": "Salary"}
+    }
   ],
-  "projection": {
-    "type": "equirectangular"
-  },
-  "mark": {
-    "type": "geoshape"
-    },
+  "projection": {"type": "equirectangular"},
+  "mark": {"type": "geoshape"},
   "encoding": {
     "color": {
       "field": "Salary",
       "type": "quantitative",
-      "scale": {"type": "log"}   
+      "scale": { 
+        "type": "threshold", 
+        "domain": [10000, 100000, 500000], 
+        "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603"] 
+      }
     },
     "tooltip": [
       {"field": "properties.name", "type": "nominal", "title": "Country"},
       {"field": "Year_Gross_Salary", "type": "quantitative"}
     ]
   }
-
 }
