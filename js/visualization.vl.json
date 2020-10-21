@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Average Salary By Country",
+  "title": "Average Salary By Country (USD)",
   "width": 800,
   "height": 600,
   "data": {
