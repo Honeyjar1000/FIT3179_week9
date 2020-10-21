@@ -4,7 +4,7 @@
   "width": 800,
   "height": 600,
   "data": {
-    "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+    "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179_week9/main/js/worldmap.json",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
   "transform": [
@@ -18,7 +18,7 @@
         "fields": ["Year_Gross_Salary"]
       }
     },
-    {"calculate": "datum.Year_Gross_Salary + 0.1", "as": "Salary"}
+    {"calculate": "datum.Year_Gross_Salary", "as": "Salary"}
   ],
   "projection": {"type": "equirectangular"},
   "mark": {"type": "geoshape"},
