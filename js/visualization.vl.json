@@ -12,7 +12,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179/main/data/salaryData2.csv"
+          "url": "https://raw.githubusercontent.com/Honeyjar1000/FIT3179_week9/main/data/salaryData3.csv"
         },
         "key": "Country",
         "fields": ["Year_Gross_Salary"]
